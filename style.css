@@ -1,0 +1,187 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.outter-container {
+    border: 2px solid #af4d98;
+    background-color: #af4d98;
+}
+
+.heading {
+    text-align: center;
+    color: white;
+    font-size: 3rem;
+}
+
+.inner-container {
+    border: 2px solid #af4d98;
+    border-radius: 2%;
+    color: #af4d98;
+    background-color: white;
+    width: 1000px;
+    margin: 25px auto;
+    padding: 15px;
+    box-shadow: 0 4px 8px 0 rgba(39, 41, 39, 0.836), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    height: 3500px;
+}
+
+legend {
+    font-weight: bold;
+    font-size: 1.75rem;
+}
+
+form input{
+    border: 1px solid #af4d98;
+    font-size: 1rem;
+    height: 1.5rem;
+    width: 96%;
+    margin: 5px 0;
+    padding: 8px;
+}
+
+::placeholder{
+    color: #af4d98;
+}
+
+textarea{
+    border: 1px solid #af4d98;
+    font-size: 1rem;
+    height: 10%;
+    width: 96%;
+    margin: 5px 0;
+    padding: 8px;
+}
+
+form input[type="checkbox"] {
+    width: auto;
+    border: none;
+    outline: none;
+    border-radius: 0.75rem;
+}
+
+fieldset {
+    border: 2px solid #af4d98;
+    width: 90%;
+    margin: 15px auto;
+    padding: 15px;
+}
+
+.checkbox {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.checkbox label {
+    margin-right: 10px;
+}
+
+.btn{
+    height: 3rem;
+    width: 10rem;
+    background-color: #af4d98;
+    color: white;
+    font-size: 1.15rem;
+    cursor: pointer;
+    margin-left: 400px;
+    border-radius: 10%;
+}
+
+.view-table-btn{
+    height: 3rem;
+    width: 10rem;
+    background-color: #af4d98;
+    color: white;
+    font-size: 1.15rem;
+    cursor: pointer;
+    margin-left: 550px;
+    border-radius: 10%;
+    display: none;
+}
+
+.btn:hover,
+.view-table-btn:hover{
+    background-color: #d361b8;
+}
+
+.table-container{
+    display: none;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table-head {
+    background-color: #af4d98;
+    color: white;
+}
+
+.table-head th {
+    padding: 10px;
+    text-align: left;
+}
+
+.table-body {
+    background-color: white;
+}
+
+.table-body tr:nth-child(even) {
+    background-color: #af4d98;
+}
+
+
+.table-body td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #af4d98;
+}
+
+
+@media screen and (max-width: 768px) {
+    .outter-container {
+        padding: 20px;
+    }
+
+    .inner-container {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    input[type="date"],
+    textarea,
+    select {
+        width: 100%;
+    }
+
+    label {
+        padding: 5px 0;
+        font-size: 0.9em;
+    }
+
+    .btn {
+        width: 100%;
+    }
+
+    .form-container {
+        width: 100%;
+    }
+
+    .table-container {
+        overflow-x: auto;
+    }
+
+    .table-head th {
+        white-space: nowrap;
+    }
+
+    .table-body td {
+        white-space: nowrap;
+    }
+}
